@@ -18,7 +18,7 @@ if (winterSport === 'y'){
   alert('Good job. On to the next question!');
 }
 
-// Question 2 video games.
+//Question 2 video games.
 var videoGames = prompt('Question 2: Do I like to play video games? yes/no')
   .toLowerCase();
 console.log('User answered ' + videoGames + ', to the question: "Do I like to play video games?"');
@@ -56,3 +56,18 @@ do {
   console.log('User answered ' + teaPreference + ', to the question: "What\'s my favorite tea?"');
 } while(teaPreference !== 'black tea' && teaPreference !== 'earl grey' && teaPreference !== 'black');
 
+
+//Question 5 My least favorite game company.
+alert('Ready for the next question?');
+var leastFavoriteGameCompany = prompt('What is my least favorite game company? Hint: This game company was voted the worst game company in America!')
+  .toLowerCase();
+while(leastFavoriteGameCompany !== 'ea' && leastFavoriteGameCompany !== 'EA' && leastFavoriteGameCompany !== 'electronic arts'
+&& leastFavoriteGameCompany !== 'Electronic Arts'){
+  console.log('User answered ' + leastFavoriteGameCompany + ', to the question: "What is my least favorite game company?"');
+  leastFavoriteGameCompany = prompt('Nope! Try again!');
+}
+alert('Correct! Let\'s just hope they learned their lesson and stop using underhanded tactics against gamers! :) ');
+console.log('User answered ' + leastFavoriteGameCompany + ', to the question: "What is my least favorite game company?"');
+
+//ending the guessing game.
+alert('Congrats on finishing my guessing game!');
