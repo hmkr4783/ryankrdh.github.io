@@ -1,8 +1,10 @@
 'use strict';
 
+var counter = 0;
+
 //Introduction
-var userName = prompt('Hello! My name is Ryan. Who are you?')
-userName
+var userName = prompt('Hello! Who are you?');
+
 alert('Hello! My name is Ryan. Welcome to my guessing game!');
 
 //Question 1 winter sport.
@@ -73,5 +75,42 @@ while(leastFavoriteGameCompany !== 'ea' && leastFavoriteGameCompany !== 'EA' && 
 alert('Correct! Let\'s just hope that they learned their lesson and stop using underhanded tactics against gamers! :) ');
 console.log('User answered ' + leastFavoriteGameCompany + ', to the question: "What is my least favorite game company?"');
 
+for (var i = 0; i<5, i++) {
+  var number = prompt('How many years have I lived in Seattle?');
+  console.log('user believes I lived in Seattle for ' + number + ' years.');
+  if (number > 11) {
+    alert('Too high!');
+  } else if(number < 11) {
+    alert('Too low!');
+  } else {
+    counter++;
+  alert('Correct!');
+  break;
+  }
+}
+
+for (var k = 0; 0 < 6; k++) {
+
+  var foodType = [
+    'lasagna', 
+    'enchilada',
+    'pasta'];
+
+  var userFoodAnswer = prompt('What is my favorite food?');
+  userFoodAnswer.toLowerCase();
+  if(userFoodAnswer.includes(foodType)){
+    counter++
+    alert('Yay, you got it right! My favorite foods are ' + foodType[0] + ', ' + foodType[1] + ', and ' + foodType[2] + '.');
+    console.log();
+    break;
+  } else {
+    alert('Nope! Try again!');
+    console.log();
+  }
+
+}
+
+
+
 //ending the guessing game.
-alert('Congrats on finishing my guessing game!');
+alert('Congrats! You got ' + counter + ' correct out of 7!');
