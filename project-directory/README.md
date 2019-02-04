@@ -53,4 +53,6 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 Acknowledgments
 Hat tip to TAs that helped.
 
+coffee image copyright: Background Photos from  <a href="https://pngtree.com/freebackground/espresso-coffee-beverage-cup-background_202850.html">pngtree.com</a>
+
 2/2/19 Pair programming. Ryan as navigator and Adrienne as driver.

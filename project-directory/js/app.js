@@ -65,6 +65,7 @@ console.log('User answered ' + videoGames + ', to the question: "Do I like to pl
 if (videoGames === 'y' || videoGames === 'yes' || videoGames === 'yea' || videoGames === 'yeah'){
   counter ++;
   alert('Correct! I love playing video games (When i have time...)');
+  alert(counter + ' correct so far. let\'s continue.');
 }else{
   alert('Nope! ' + counter + ' correct so far.. maybe you\'ll get the next one right.');
 }
@@ -78,7 +79,7 @@ while(favoritePets !== 'dog' && favoritePets !== 'dogs'){
   favoritePets = prompt('Nope! Try again!');
 }
 counter ++;
-alert('Correct! I love dogs!');
+alert('Correct! I love dogs!' + counter + ' correct so far. let\'s continue.');
 console.log('User answered ' + favoritePets + ', to the question: "What\'s my favorite pet?"');
 
 //Question 7 My coffee preference question using a simple while loop statement. This has multiple answers.
@@ -90,12 +91,12 @@ while(coffeePreference !== 'latte' && coffeePreference !== 'cafe latte' && coffe
   coffeePreference = prompt('Try again!!');
 }
 counter ++;
-alert('Correct! I only order ' + coffeePreference + ' most of the time!');
+alert('Correct! I only order ' + coffeePreference + ' most of the time!' + counter + ' correct so far. let\'s continue.');
 console.log('User answered ' + coffeePreference + ', to the question: "What is my favorite coffee?"');
 
 //Question 8 My least favorite game company question using a simple while loop statement.
 alert('Ready for the next question?');
-var leastFavoriteGameCompany = prompt('What is my least favorite game company? Hint: This game company was voted the worst game company in America!')
+var leastFavoriteGameCompany = prompt('What is my least favorite game company? Hint: This game company was voted the worst game company in America!');
 leastFavoriteGameCompany.toLowerCase();
 while(leastFavoriteGameCompany !== 'ea' && leastFavoriteGameCompany !== 'EA' && leastFavoriteGameCompany !== 'electronic arts'
 && leastFavoriteGameCompany !== 'Electronic Arts'){
@@ -106,7 +107,7 @@ counter ++;
 alert('Correct! Let\'s just hope that they learned their lesson and stop using underhanded tactics against gamers! :) ');
 console.log('User answered ' + leastFavoriteGameCompany + ', to the question: "What is my least favorite game company?"');
 
-//Question 9 How long have I lived in Seattle. This question asks for a number value. 
+//Question 9 How long have I lived in Seattle. This question asks for a number value.
 //It gives the user 5 chances and let's them know if their answer was too high or low
 for (var i = 0; i < 5; i++) {
 
@@ -123,7 +124,7 @@ for (var i = 0; i < 5; i++) {
   }
 }
 
-//Question 10 My favorite food. This question uses arrays to hold multiple answers. 
+//Question 10 My favorite food. This question uses arrays to hold multiple answers.
 //Gives the user 6 tries.
 for (var k = 0; k < 6; k++) {
 
@@ -147,6 +148,6 @@ for (var k = 0; k < 6; k++) {
 }
 
 // Ending the guessing game. Tallys up the correct answer out of 10 for the user.
-alert('Congrats! You got ' + counter + ' correct out of 10!');
+alert('Congrats ' + userName + '! You got ' + counter + ' correct out of 10!');
 
 
