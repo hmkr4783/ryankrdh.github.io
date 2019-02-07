@@ -113,7 +113,9 @@ for (var i = 0; i < 5; i++) {
 
   var years = prompt('How many years have I lived in Seattle? Input number answer only.');
   console.log('user believes I lived in Seattle for ' + years + ' years.');
-  if (years > 11) {
+  if (isNaN(years)) {
+    alert('Not a number!!');
+  } else if (years > 11) {
     alert('Too high!');
   } else if (years < 11) {
     alert('Too low!');
@@ -134,16 +136,16 @@ for (var k = 0; k < 6; k++) {
     'pasta'
   ];
 
-  var userFoodAnswer = prompt('What is my favorite food?');
+  var userFoodAnswer = prompt('What is my favorite dish?');
   userFoodAnswer.toLowerCase();
   if(foodTypes.includes(userFoodAnswer)){
     counter++;
-    alert('Yay, you got it right! My favorite foods are ' + foodTypes[0] + ', ' + foodTypes[1] + ', and ' + foodTypes[2] + '.');
-    console.log('User inputs that my favorite food is ' + userFoodAnswer + '.');
+    alert('Yay, you got it right! My favorite dish are ' + foodTypes[0] + ', ' + foodTypes[1] + ', and ' + foodTypes[2] + '.');
+    console.log('User inputs that my favorite dish is ' + userFoodAnswer + '.');
     break;
   } else {
     alert('Nope! Try again!');
-    console.log('User inputs that my favorite food is ' + userFoodAnswer + '.');
+    console.log('User inputs that my favorite dish is ' + userFoodAnswer + '.');
   }
 }
 
