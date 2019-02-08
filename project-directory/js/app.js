@@ -169,9 +169,6 @@ function myTenthQuestion() {
     }
   }
 }
-// Ending the guessing game. Tallys up the correct answer out of 10 for the user.
-alert('Congrats ' + userName + '! You got ' + counter + ' correct out of 10!');
-
 
 myFirstQuestion();
 mySecondQuestion();
@@ -183,4 +180,9 @@ mySeventhQuestion();
 myEighthQuestion();
 myNinthQuestion();
 myTenthQuestion();
+
+
+// Ending the guessing game. Tallys up the correct answer out of 10 for the user.
+alert('Congrats ' + userName + '! You got ' + counter + ' correct out of 10!');
+
 
