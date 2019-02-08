@@ -3,14 +3,13 @@
 var counter = 0;
 
 //Asking for user's name.
-function introduction() {
-  var userName = prompt('Hello! Who are you?');
-  userName.toLowerCase();
-  console.log('user\'s name is ' + userName + '.');
+var userName = prompt('Hello! Who are you?');
+userName.toLowerCase();
+console.log('user\'s name is ' + userName + '.');
 
-  //Introduction.
-  alert('Hello ' + userName + '! My name is Ryan. Welcome to my guessing game!');
-}
+//Introduction.
+alert('Hello ' + userName + '! My name is Ryan. Welcome to my guessing game!');
+
 //Question 1 winter sport question using a simple IF statement.
 function myFirstQuestion() {
   var winterSport = prompt('Question 1: Is my favorite winter sport, ice skating? yes/no');
@@ -71,7 +70,7 @@ function myFourthQuestion() {
 //Question 5 video games question using a simple IF statement.
 function myFifthQuestion() {
   var videoGames = prompt('Question 5: Do I like to play video games? yes/no');
-  winterSport.toLowerCase();
+  videoGames.toLowerCase();
   console.log('User answered ' + videoGames + ', to the question: "Do I like to play video games?"');
   if (videoGames === 'y' || videoGames === 'yes' || videoGames === 'yea' || videoGames === 'yeah'){
     counter ++;
@@ -169,10 +168,10 @@ function myTenthQuestion() {
       console.log('User inputs that my favorite dish is ' + userFoodAnswer + '.');
     }
   }
-
+}
 // Ending the guessing game. Tallys up the correct answer out of 10 for the user.
 alert('Congrats ' + userName + '! You got ' + counter + ' correct out of 10!');
-}
+
 
 myFirstQuestion();
 mySecondQuestion();
